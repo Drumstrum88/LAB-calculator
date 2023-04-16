@@ -1,0 +1,22 @@
+body{
+  background-color: #a9bd7e;
+}
+table{
+  margin: auto;
+  background-color: #9dd2ea;
+  width: 295px;
+  height: 325px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#equal {
+  background-color: rgb(85, 85, 255);
+  color: white;
+}
+
+.button:hover {
+  background-color: #323330;
+  color: white;
+  transition: 0.5s ease-in-out;
+}

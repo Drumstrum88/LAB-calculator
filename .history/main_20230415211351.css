@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+  center-div {
+  width: 400px;
+  background-color: 000000;
+  }
+
+
+  #answer{
+    width: 270px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #000000;
+    float: left;
+    color: #ffffff;
+}
+/* answer hover effect */
+#answer:hover{
+    width: 270px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #000000;
+}
+
+input{
+  outline: 0;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  border: 4px;
+  border-color: #000000;
+  color:#d8d9db ;
+  width: 69px;
+  height: 50px;
+  float: left;
+  font-size: 20px;
+  color:#000000;
+  padding: 1px 5px;
+}
+
+.operator{
+  background-color: #df974c;
+  position: relative;
+}
+
+
+#clear{
+  float: left;
+  position: relative;
+  display: block;
+  background-color: #d8d9db ;
+  margin-bottom: 15px;
+  color: #000000
+}
+
+input .button {
+  borderst
+}
