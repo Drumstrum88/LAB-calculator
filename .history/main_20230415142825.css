@@ -1,0 +1,39 @@
+container {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  width: 24%;
+  height: 50px;
+  margin-bottom: 0.5%;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ebebeb;
+}
+
+button:active {
+  background-color: #bbbcbe;
+}
+
+.function {
+  background-color: #df974c;
+  color: #ffffff;
+}
+
+.function:hover {
+  background-color: #dfb07e;
+}
+
+.function:active {
+  background-color: #dd8d37;
+}
