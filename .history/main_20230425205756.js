@@ -78,7 +78,7 @@ calculatorKeys.addEventListener('click', event => {
         currentInput += keyContent;
       }
     }
-    // updates the display with new input | calculation results
+    // updates the display with new input
     updateDisplay();
   }
 });
