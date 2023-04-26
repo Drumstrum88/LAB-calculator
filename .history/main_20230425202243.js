@@ -13,7 +13,6 @@ const updateDisplay = () => {
   calculatorDisplay.textContent = currentInput;
 }
 
-// This is my function for the actual math of the calculator. I used the parseFloat method to tell the computer that my strings are really numbers and performs the math functions accordingly
 const calculate = () => {
   switch (calculationOperator) {
     case 'add':
@@ -34,30 +33,23 @@ const calculate = () => {
   currentInput = result.toString();
   calculationOperator = '';
 }
-// Event listeners
+
 calculatorKeys.addEventListener('click', event => {
   const key = event.target;
   const action = key.dataset.action;
   const keyContent = key.textContent;
-// listens for buttons clicked and functions accordingly 
+
   if (event.target.matches('button')) {
-    // checks to see if there is a decimal 
     if (action === 'decimal') {
       if (!currentInput.includes('.')) {
         currentInput += '.';
       }
-    } else if (action === 
-      // clear resets all the inputs and operators to their initial value.
-      'clear') {
+    } else if (action === 'clear') {
       currentInput = '0';
       previousInput = '';
       calculationOperator = '';
       result = '';
-
-      // These are the add, subtract, multiply and divide event listeners that activate the specific cases
     } else if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide') {
-      // if there isn't a previous input it saves the current input and operator for later
-
       if (previousInput === '') {
         previousInput = currentInput;
       } else {
@@ -78,7 +70,6 @@ calculatorKeys.addEventListener('click', event => {
         currentInput += keyContent;
       }
     }
-    // updates the display with new input | calculation results
     updateDisplay();
   }
 });

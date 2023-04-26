@@ -56,8 +56,7 @@ calculatorKeys.addEventListener('click', event => {
 
       // These are the add, subtract, multiply and divide event listeners that activate the specific cases
     } else if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide') {
-      // if there isn't a previous input it saves the current input and operator for later
-
+      // if there isn't a previous input it 
       if (previousInput === '') {
         previousInput = currentInput;
       } else {
@@ -78,7 +77,6 @@ calculatorKeys.addEventListener('click', event => {
         currentInput += keyContent;
       }
     }
-    // updates the display with new input | calculation results
     updateDisplay();
   }
 });

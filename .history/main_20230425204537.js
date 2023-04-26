@@ -47,17 +47,13 @@ calculatorKeys.addEventListener('click', event => {
         currentInput += '.';
       }
     } else if (action === 
-      // clear resets all the inputs and operators to their initial value.
+      // clear resets all the inputs and operat
       'clear') {
       currentInput = '0';
       previousInput = '';
       calculationOperator = '';
       result = '';
-
-      // These are the add, subtract, multiply and divide event listeners that activate the specific cases
     } else if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide') {
-      // if there isn't a previous input it saves the current input and operator for later
-
       if (previousInput === '') {
         previousInput = currentInput;
       } else {
@@ -78,7 +74,6 @@ calculatorKeys.addEventListener('click', event => {
         currentInput += keyContent;
       }
     }
-    // updates the display with new input | calculation results
     updateDisplay();
   }
 });
